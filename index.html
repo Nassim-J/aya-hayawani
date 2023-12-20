@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aya33333</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff0000;
+            font-size: 5em;
+            margin-top: 100px;
+            margin-bottom: 40px;
+        }
+
+        .heart {
+            margin-top: 100px;
+            scale: 1.5;
+            width: 100px;
+            height: 90px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            animation: beat 1s infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            position: absolute;
+            content: "";
+            left: 50px;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: #ff0000;
+            border-radius: 50px 50px 0 0;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        .heart::after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+        @keyframes beat {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        body {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>I Love You <br> <span style="font-size: medium;">(ma3 enik hayawani)</span><br><br></h1>
+    <div style="margin: auto;" class="heart"></div>
+    <p
+        style="color:  red; font-size:xx-large; text-align:center; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">
+        <br><br><br>
+        sweet 16 albi
+    </p>
+</body>
+
+</html>
